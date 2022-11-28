@@ -1,4 +1,4 @@
-#!C:\Users\User\AppData\Local\Programs\Python\Python37-32\python.exe
+#!C:\Users\Administrator\AppData\Local\Programs\Python\Python310\python.exe
 #-*- coding: utf-8 -*-
 #處理stdio輸出編碼，以避免亂碼
 import codecs, sys 
@@ -21,8 +21,10 @@ print("""
 <body>
 商品目錄 
 <a href='seehistory.py'> 查尋下標紀錄 </a><hr>
-
- 
+<legend>查詢商品說明</legend>
+<form method="showdetail" action="showdetail.py">
+輸入商品編號<input type="text" name='pid'><br>
+<input type="submit">
 """)
 proList=cat.getList()
 for (id,product,date,price,act) in proList:

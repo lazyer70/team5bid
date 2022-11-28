@@ -14,7 +14,12 @@ def Listact():
     records = cur.fetchall()
     return records
 ##catalogueL=getList()
-
+def showdetail(id):
+    #查詢
+    sql="select detail from bid where act=1 and pid=%s order by pid ;"%(id)
+    cur.execute(sql)
+    records = cur.fetchall()
+    return records
 ##def delProduct(id):
     sql="delete from bid where id=%s;"#%s 讓你=前面的東西以他的數字或字串取代掉=24行的id
     cur.execute(sql,(id,))
