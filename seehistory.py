@@ -1,4 +1,4 @@
-#!C:\Users\User\AppData\Local\Programs\Python\Python37-32\python.exe
+#!C:\Users\Administrator\AppData\Local\Programs\Python\Python310\python.exe
 #-*- coding: utf-8 -*-
 #處理stdio輸出編碼，以避免亂碼
 import codecs, sys 
