@@ -4,17 +4,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>下標</title>
 </head>
+<style type="text/css">
+    body {width:700px; margin:15px auto;}
+    #content {background-color:#D8EEFD; margin:20px; padding:20px; border:2px solid ivory; font-size: 14pt; color:#62555C; line-height:28px}
+    .hr-twill {
+        border: 0;
+        padding: 3px;
+        background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
+    }
+</style>
 <body>
-<p>請輸入下標商品跟價格</p>
-<hr>
-<a href='listproduct.py'> 返回商品目錄 </a><hr>
-<div >
+<div id="content">
 <fieldset>
-<legend>商品數入表單</legend>
-<form method="add" action="buy.py">
-輸入商品編號<input type="text" name='id'><br>
-輸入下標價格<input type="text" name='price'><br>
+<legend align="center" style="font-size:22px ;font-weight:600">請輸入要下標的商品跟價格</legend>
+<form method="add" action="buy.py" align="center"><br>
+輸入商品編號：<input type="text" name='id'><br>
+輸入下標價格：<input type="text" name='price'><br><br>
 <input type="submit">
+<h4 align="right"><a href='listproduct.py' style="color:#62555C"> 返回商品目錄 </a></h4>
 </form>
 </fieldset>
 </div>

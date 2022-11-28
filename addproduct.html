@@ -4,20 +4,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>新增商品項目</title>
 </head>
+<style type="text/css">
+    body {width:700px; margin:15px auto;}
+    #content {background-color:#DAD9E8; margin:20px; padding:20px; border:2px solid ivory; font-size: 14pt; color:#62555C; line-height:28px}
+    .hr-twill {
+        border: 0;
+        padding: 3px;
+        background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
+    }
+</style>
 <body>
-<p>請輸入新增商品</p>
-<hr>
-<div >
+<div id="content">
 <fieldset>
-<legend>商品輸入表單</legend>
-<form method="add" action="addproduct.py">
-輸入商品名稱<input type="text" name='Pname'><br>
-輸入截止日期<input type="datetime-local" name='deadline'><br>
-輸入起標價<input type="text" name='price'><br>
+<legend align="center" style="font-size:22px;font-weight:600">請輸入要新增的商品</legend>
+<form method="add" action="addproduct.py" align="center"><br>
+輸入商品名稱：<input type="text" name='Pname' size="28"><br>
+輸入截止日期：<input type="datetime-local" name='deadline'><br>
+輸入起標價格：<input type="text" name='price' size="28"><br>
+輸入詳細資訊：<input type="text" name='detail' size="28"><br><br>
 <input type="submit">
-<br>
-<br>
-<br><a href='manageproduct.py'>回商品列表</a>
+<br><h4 align="right" "><a href='manageproduct.py' style="color:#62555C" >回商品列表</a></h4>
 </form>
 </fieldset>
 </div>
